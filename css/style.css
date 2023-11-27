@@ -1,0 +1,23 @@
+#center {
+    width: 100%;
+    text-align: center;
+    margin-top: 77px;
+    position: absolute;
+    }
+    
+    .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    }
+    
+    .left > img { margin-top: 62px; }
+    
+    .right {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    }
+    

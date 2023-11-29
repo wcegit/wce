@@ -3,44 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Walsenburg Craft Emporium</title>
+    <meta name="description" content="Craft: supplies for the Southern Colorado region" />
+    <meta name="keywords" content="crafting, yarn, knitting, crochet, hooks, felt, needles, loom, heddle" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Your custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <style>
+      .navbar-custom {
+        background-color: #f8f9fa; /* Light gray background color */
+      }
+
+      .navbar-brand img {
+        max-height: 75px; /* Adjust the logo height */
+      }
+    </style>
   </head>
-  <body style="background-color: whitesmoke">
+
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/CraftMainLogo800x600.png" alt="Walsenburg Craft Emporium logo Logo" />
+        </a>
+        <a class="navbar-brand" href="#">Craft Supplies for All</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#survey">Take our survey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hours">Hours & Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
     <main>
-      <h1 style="text-align: center">Welcome to the Walsenburg Craft Emporium</h1>
-      <div style="text-align: center">
-        <img width="350" src="assets/CraftMainLogo800x600.png" />
-      </div>
-      <div style="align-content: left; padding-left: 25%; padding-right: 25%">
-        We are the Walsenburg Crafts Emporium. A local crafts supply shop working with the community to support your craft
-        interests. We plan to have supplies for all kinds of crafts from fiber to electronics. We are starting small, with yarn,
-        knitting and crochet supplies, and will expand as we can. We hope to hold classes, and community craft afternoons soon.
-      </div>
-      <br />
-      <div style="align-content: left; text-align: left; padding-left: 27%; padding-right: 25%">
-        Click or Scan the QR code and let us know what kind of craft supplies you’d like to see us carry. <br />
-        Hours of operation: Friday 12:00pm - 6:30pm and Saturday 10:00am - 4:30pm
-        <a href="https://forms.gle/yixcDttozJrufUMb6"><img width="75" style="float: right" src="assets/surveyQR.jpg" /></a>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div id="center">
-        <div style="text-align: left; padding-left: 25%; padding-right: 25%">
-          Located at 609 Main St. in Walsenburg Colorado, we are a participate in the Wheelhouse Business Incubator program to help
-          us get started. Our hours will be limited the first few months with Friday and Saturday hours until after the holidays.
+      <section id="home" class="py-5">
+        <div class="container">
+          <h2>Welcome to the Walsenburg Craft Emporium</h2>
+          <!-- Add content here for your homepage -->
+          <p>Discover a world of quality craft supplies...</p>
+          <p>
+            We are the Walsenburg Crafts Emporium. A local crafts supply shop working with the community to support your craft
+            interests. We plan to have supplies for all kinds of crafts from fiber to electronics. We are starting small, with yarn,
+            knitting and crochet supplies, and will expand as we can. We hope to hold classes, and community craft afternoons soon.
+          </p>
         </div>
-        <br />
-        <div class="left">
-          <img width="450" src="assets/wheelhouse-front.png" />
+      </section>
+
+      <section id="survey" class="py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              Click or Scan the QR code and let us know what kind of craft supplies you would like to see us carry. <br />
+            </div>
+            <div class="col-md-2">
+              <a href="https://forms.gle/yixcDttozJrufUMb6" target="_blank"><img width="100" src="assets/surveyQR.jpg" /></a>
+            </div>
+          </div>
         </div>
-        <div class="right">
-          <img width="350" src="assets/map2.png" />
+      </section>
+
+      <section id="map" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Visit Our Store</h3>
+              <!-- Embed Google Maps here or provide address -->
+              <p>Find us at the Wheelhouse Business Incubator</p>
+              <p>609 Main St. Walsenburg CO 81089</p>
+              <img width="450" src="assets/wheelhouse-front.png" />
+            </div>
+            <div class="col-md-6">
+              <img width="350" src="assets/map2.png" />
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section id="hours" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Hours of Operation</h3>
+              <!-- Display your store's opening hours -->
+              <ul>
+                <li>Friday: 12:00 PM - 6:30 PM</li>
+                <li>Saturday: 10:00 AM - 4:30 PM</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h2>Contact Us</h2>
+              <!-- Add a contact form or contact details here -->
+              Email: <a href="mailto:craftyorphans@gmail.com"/>craftyorphans@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery (for Bootstrap components) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
